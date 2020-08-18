@@ -1,0 +1,34 @@
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// This File is used to configure the behavior of Typescript
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+{
+  "compilerOptions": {
+    "declaration": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "Components/*": [
+        "src/components/*"
+      ],
+      "Lib/*": [
+        "src/lib/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "typings"
+  ]
+}
